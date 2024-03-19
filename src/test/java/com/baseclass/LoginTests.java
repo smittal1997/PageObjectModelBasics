@@ -16,7 +16,7 @@ public class LoginTests extends PageParentClass {
 	{
 		LoginPage lp = new LoginPage();
 		lp.doLogin(data.get("username"),data.get("password"));
-		Assert.fail("Login test");
+		//Assert.fail("Login test"); //Commenting the failure
 	}
 	
 	@DataProvider

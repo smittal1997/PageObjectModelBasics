@@ -16,6 +16,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterSuite;
 
 
 public class PageParentClass {
@@ -46,7 +47,6 @@ public class PageParentClass {
 				browser = System.getenv("browser");
 			}
 			System.setProperty("browser", browser);
-			
 			
 			//Launch Browser config
 			if(browser.equals("chrome"))
@@ -112,7 +112,7 @@ public class PageParentClass {
 	}
 	
 	
-	/*@AfterSuite
+/*	@AfterSuite
 	public static void quit()
 	{
 		driver.quit();

@@ -8,7 +8,7 @@ public class BaseTest {
 	/*@AfterSuite
 	public void tearDown()
 	{
-		//PageParentClass.quit();
+		PageParentClass.quit();
 	} */
 
 }
